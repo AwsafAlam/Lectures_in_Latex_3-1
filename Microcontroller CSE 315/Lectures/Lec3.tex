@@ -1,34 +1,4 @@
-\documentclass{article}
-
-\usepackage{lipsum}
-\usepackage{color}
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage[utf8]{inputenc}
-
-\setlength{\arrayrulewidth}{1mm}
-\setlength{\tabcolsep}{18pt}
-\renewcommand{\arraystretch}{1.5}
-
-
-\title{Microcontrollers \& Embeded System Design ~\textbf{\\CSE 315}}
-\author{Md Awsaf Alam}
-\date{\today}
-
-\begin{document}
-
-\maketitle
-% \lipsum[1-3]
-\newpage
-
-\tableofcontents
-
-\newpage
-
-
-\section{8088 Hardware Specifications}
-
-\subsection{Maximum Mode Pins}
+\section{Maximum Mode Pins}
 For using external coprocessors:
 \begin{description}
 
@@ -74,7 +44,7 @@ $ \overline{QS_1} $ & $ \overline{QS_0} $  & Function   \\
 \end{tabular}
 
 \caption{}
-\label{table:1}
+\label{table:4}
 \end{table}
 
 \section{Clock Generator (8284A)}
@@ -87,6 +57,14 @@ $ \overline{QS_1} $ & $ \overline{QS_0} $  & Function   \\
     \item TTL-level peripheral clock signal
   \end{itemize}
 \end{description}
+\newpage
+\subsection{Pin diagram}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width = 0.8\textwidth]{./figures/8284A.png}
+    \caption{Pin Diagram for Intel 8284A}
+    \label{fig:bl}
+\end{figure}
 
 \subsection{Pin Functions}
 \begin{description}
@@ -118,7 +96,3 @@ $ \overline{QS_1} $ & $ \overline{QS_0} $  & Function   \\
   \end{itemize}
 
 \end{description}
-
-
-
-\end{document}
