@@ -3,13 +3,16 @@
 \contentsline {section}{\numberline {1.1}Introduction}{7}
 \contentsline {section}{\numberline {1.2}Advantages of Modulation}{7}
 \contentsline {section}{\numberline {1.3}Types of Modulation}{8}
-\contentsline {chapter}{\numberline {2}Amplitude Modulation}{9}
-\contentsline {section}{\numberline {2.1}Amplitude Modulation (AM)}{9}
-\contentsline {subsection}{\numberline {2.1.1}Introduction}{9}
-\contentsline {subsection}{\numberline {2.1.2}Baseband \& Carrier communication}{10}
-\contentsline {subsection}{\numberline {2.1.3}Amplitude Modulation Principle}{10}
+\contentsline {chapter}{\numberline {2}Amplitude Modulation \& Demodulation}{9}
+\contentsline {section}{\numberline {2.1}Baseband \& Carrier communication}{9}
+\contentsline {section}{\numberline {2.2}Amplitude Modulation (AM)}{10}
+\contentsline {subsection}{\numberline {2.2.1}Introduction}{10}
+\contentsline {subsection}{\numberline {2.2.2}Amplitude Modulation Principle}{10}
+\contentsline {subsection}{\numberline {2.2.3}Envelope Formation}{11}
 \contentsline {chapter}{\numberline {3}Double Side-Band Suppressed Carrier}{13}
-\contentsline {part}{II\hspace {1em}Lecture 2}{15}
-\contentsline {chapter}{\numberline {4}Double Side-Band with Carrier}{17}
-\contentsline {part}{III\hspace {1em}Lecture 3}{19}
-\contentsline {part}{IV\hspace {1em}Lecture 4}{21}
+\contentsline {section}{\numberline {3.1}Modulation}{13}
+\contentsline {section}{\numberline {3.2}Demodulation}{16}
+\contentsline {part}{II\hspace {1em}Lecture 2}{19}
+\contentsline {chapter}{\numberline {4}Double Side-Band with Carrier}{21}
+\contentsline {part}{III\hspace {1em}Lecture 3}{23}
+\contentsline {part}{IV\hspace {1em}Lecture 4}{25}
