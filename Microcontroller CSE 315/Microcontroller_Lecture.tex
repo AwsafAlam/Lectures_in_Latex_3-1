@@ -14,6 +14,19 @@
 \setlength{\tabcolsep}{18pt}
 \renewcommand{\arraystretch}{1.5}
 
+\lstdefinelanguage
+   [x64]{Assembler}     % add a "x64" dialect of Assembler
+   [x86masm]{Assembler} % based on the "x86masm" dialect
+   % with these extra keywords:
+   {morekeywords={TRON,CQO,CMPSQ,CMPXCHG16B,JRCXZ,LODSQ,MOVSXD, %
+                  POPFQ,PUSHFQ,SCASQ,STOSQ,IRETQ,RDTSCP,SWAPGS, %
+                  rax,rdx,rcx,rbx,rsi,rdi,rsp,rbp, %
+                  r8,r8d,r8w,r8b,r9,r9d,r9w,r9b, %
+                  r10,r10d,r10w,r10b,r11,r11d,r11w,r11b, %
+                  r12,r12d,r12w,r12b,r13,r13d,r13w,r13b, %
+                  r14,r14d,r14w,r14b,r15,r15d,r15w,r15b}} % etc.
+
+\lstset{language=[x64]Assembler}
 
 \title{Microcontrollers \& Embeded System Design ~\textbf{\\CSE 315}}
 \author{Md Awsaf Alam}
@@ -27,7 +40,6 @@
 
 
 \part{8086/8088 Hardware Specifications}
-
 \chapter{Lecture 1}
 \subfile{Lectures/Lec1.tex}
 
@@ -41,7 +53,6 @@
 \subfile{Lectures/Lec4.tex}
 
 \part{Memory Interface}
-
 \chapter{Lecture 5}
 \subfile{Lectures/Lec5.tex}
 
@@ -59,5 +70,22 @@
 
 \chapter{Lecture 10}
 \subfile{Lectures/Lec10.tex}
+
+\part{Basic I/O Interface}
+\chapter{Lecture 11}
+\subfile{Lectures/Lec11.tex}
+
+\chapter{Lecture 12}
+\subfile{Lectures/Lec12.tex}
+
+\part{Interrupt}
+\chapter{Lecture 13}
+\subfile{Lectures/Lec13.tex}
+
+\chapter{Lecture 14}
+\subfile{Lectures/Lec14.tex}
+
+\chapter{Lecture 15}
+\subfile{Lectures/Lec15.tex}
 
 \end{document}
