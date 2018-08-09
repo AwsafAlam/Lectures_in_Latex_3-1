@@ -42,7 +42,8 @@ $t_{CO}$ : Chip Select to Output delay\\
 $t_{DF}$ : Chip Deselect to Output float\\
 
 \begin{figure}[h!]
-  \includegraphics[width = 0.8\textwidth]{./figures/Memory_waveform.png}
+  \centering
+  \includegraphics[width = 1.0\textwidth]{./figures/Memory_waveform.png}
   \caption{The timing diagram of AC characteristics of the 2716 EPROM.}
   \label{}
 \end{figure}
@@ -69,7 +70,8 @@ $t_{DF}$ : Chip Deselect to Output float\\
 \newpage
 Example of multiplexed address pins : 64K x 4 DRAM
 \begin{figure}[h!]
-  \includegraphics[width = 0.8\textwidth]{./figures/DRAM.png}
+  \centering
+  \includegraphics[width = 0.6\textwidth]{./figures/DRAM.png}
   \caption{The pin-out of the TMS4464, 64K x 4 dynamic RAM (DRAM).}
   \label{}
 \end{figure}
@@ -81,6 +83,7 @@ Here, for 64K, 16 address pins are required. However, 8 address pins are used th
 Address multiplexer of 64K x 4
 
 \begin{figure}[h!]
+  \centering
   \includegraphics[width = 0.8\textwidth]{./figures/RAS.png}
   \caption{Address multiplexer for the TMS4464 DRAM.}
   \label{}
@@ -88,5 +91,5 @@ Address multiplexer of 64K x 4
 \begin{itemize}
   \item If $\overline{RAS}$ is 0, then A pins get connected and A0-A7 are stored in the internal Row Address latch
   \item \textit{Internal Row Address Latch} is edge triggered, and therefore the row address gets captured into the latch before the address changes to column address.
-  \item If $\overline{RAS}$ is 1, the the 8 pins get connected and A8-A15 are stored in \textit{Internal Column Address Latch} 
+  \item If $\overline{RAS}$ is 1, the the 8 pins get connected and A8-A15 are stored in \textit{Internal Column Address Latch}
 \end{itemize}

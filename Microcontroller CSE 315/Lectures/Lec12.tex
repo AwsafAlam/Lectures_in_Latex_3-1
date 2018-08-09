@@ -1,6 +1,7 @@
 \section{Mode 0 Operation}
 
 \begin{figure}[h!]
+  \centering
   \includegraphics[width = 1.2\textwidth]{./figures/Mode_0_op.png}
   \caption{An 8-digit LED display interfaced to the 8088 microprocessor through an 82C55 PIA.}
 \end{figure}
@@ -16,6 +17,7 @@ PAL Logic:
 \subsection{Mode 0 Operation: Keyboard Matrix interface}
 
 \begin{figure}[h!]
+  \centering
   \includegraphics[width = 1.2\textwidth]{./figures/Mode_0_key.png}
   \caption{A 4 x 4 keyboard matrix connected to an 8088 microprocessor through the 82C55 PIA.}
 \end{figure}
@@ -29,6 +31,7 @@ PAL Logic:
 \end{itemize}
 
 \begin{figure}[h!]
+  \centering
   \includegraphics[width = 0.7\textwidth]{./figures/Debounce.png}
   \caption{The flowchart of a keyboard-scanning procedure.}
 \end{figure}
@@ -36,6 +39,7 @@ PAL Logic:
 \section{Mode 1: Strobed Input}
 Allows external data to be stored into the port until the microprocessor is ready to receive it.
 \begin{figure}[h!]
+  \centering
   \includegraphics[width = 1.2\textwidth]{./figures/Mode_1.png}
   \caption{Strobed input operation (mode 1) of the 82C55. (a) Internal structure and (b) timing diagram.}
 \end{figure}
@@ -49,6 +53,7 @@ Allows external data to be stored into the port until the microprocessor is read
 
 \end{description}
 \begin{figure}[h!]
+  \centering
   \includegraphics[width = 0.8\textwidth]{./figures/Strobed.png}
   \caption{Using the 82C55 for strobed input operation of a keyboard.}
 \end{figure}
@@ -60,7 +65,8 @@ Allows external data to be stored into the port until the microprocessor is read
 
 \section{Mode 1: Strobed Output}
 \begin{figure}[h!]
-  \includegraphics[width = 1.2\textwidth]{./figures/Strobed_Output.png}
+  \centering
+  \includegraphics[width = 1\textwidth]{./figures/Strobed_Output.png}
   \caption{Strobed output operation (mode 1) of the 82C55. (a) Internal structure and (b) timing diagram.}
 \end{figure}
 
@@ -75,7 +81,8 @@ Allows external data to be stored into the port until the microprocessor is read
 \subsection{Strobed Output: Printer}
 
 \begin{figure}[h!]
-  \includegraphics[width = 1.2\textwidth]{./figures/Strobed_Printer.png}
+  \centering
+  \includegraphics[width = 0.8\textwidth]{./figures/Strobed_Printer.png}
   \caption{Strobed output operation (mode 1) of the 82C55. (a) Internal structure and (b) timing diagram.}
 \end{figure}
 \begin{itemize}
@@ -83,18 +90,22 @@ Allows external data to be stored into the port until the microprocessor is read
   \item No signal fto generate the $\overline{DS}$ dignal to the printer.So, PC4 is used with S/W generated $\overline{DS}$.
 \end{itemize}
 
+\newpage
 \subsection{Comparison between Mode 1 Strobed Input and Output}
 
 \begin{figure}[h!]
-  \includegraphics[width = 1.2\textwidth]{./figures/Strobed_I.png}
+  \centering
+  \includegraphics[width = 1\textwidth]{./figures/Strobed_I.png}
 \end{figure}
 \begin{figure}[h!]
-  \includegraphics[width = 1.2\textwidth]{./figures/Strobed_O.png}
+  \centering
+  \includegraphics[width = 1\textwidth]{./figures/Strobed_O.png}
 \end{figure}
 
 \section{Mode 2: Bidirectional Operation}
 Group A only; Allows both transmit and receive over the same wires. Useful when interfacing two computers.
 \begin{figure}[h!]
-  \includegraphics[width = 0.8\textwidth]{./figures/Bi_Directional.png}
+  \centering
+  \includegraphics[width = 1\textwidth]{./figures/Bi_Directional.png}
   \caption{Mode 2 operation of the 82C55. (a) Internal structure and (b) timing diagram.}
 \end{figure}

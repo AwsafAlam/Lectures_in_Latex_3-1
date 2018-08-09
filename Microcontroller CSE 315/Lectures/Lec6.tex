@@ -8,7 +8,8 @@
 \subsection{Simple NAND Gate Decoder}
 
 \begin{figure}[h!]
-  \includegraphics[width = 0.8\textwidth]{./figures/NAND_decoder.png}
+  \centering
+  \includegraphics[width = 1.0\textwidth]{./figures/NAND_decoder.png}
   \caption{A simple NAND gate decoder that selects a 2716 EPROM for memory location FF800H–FFFFFH}
   \label{}
 \end{figure}
@@ -20,6 +21,7 @@
 
 \subsection{3-to-8 Line Decoder(74LS138)}
 \begin{figure}[h!]
+  \centering
   \includegraphics[width = 0.8\textwidth]{./figures/Decoder_3_to_8.png}
   \caption{The 74LS138 3-to-8 line decoder and function table.}
   \label{}
@@ -49,6 +51,7 @@
 Bipolar PROM is used because of its larger number of input connections, which reduces the number of other circuits required in the decoding system.\newline
 \textbf{Example}: 82S147 (512 x 8) PROM has 10 input connections and 8 output connections. Among the input connections, 9 are used for memory addressing (of PROM) with 1 control (G) input. \newline
 \begin{figure}[h!]
+  \centering
   \includegraphics[width = 1.0\textwidth]{./figures/PROM.jpg}
 \end{figure}
 Here, the control input ($\overline{G}$ or $\overline{CE}$) must be grounded, as if this PROM's outputs float to their high-impedence state, one or more of the PROMs might be selected by noise impulse of the system.
@@ -67,5 +70,5 @@ There are three \textbf{Programmable Logic Devices}(PLDs) that function in the s
 \begin{itemize}
   \item These devices can be programmed by blowing fumes to establish connections.
   \item The decoding circuit using a PLD is similar as that with a PROM, where the PROM gets replaced by the PLD (programmed with the logic representing the input-output pattern realized by PROM, as shown in a table in the last decoding)
-  \item No control or selection logic is required hence. 
+  \item No control or selection logic is required hence.
 \end{itemize}

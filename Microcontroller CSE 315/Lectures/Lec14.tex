@@ -51,7 +51,8 @@ TRON ENDP
 NMI is used for parity errors and other major system faults such as power failure.
 
 \begin{figure}[h!]
-  \includegraphics[width = 0.8\textwidth]{./figures/NMI.png}
+  \centering
+  \includegraphics[width = 1\textwidth]{./figures/NMI.png}
   \caption{A power failure detection circuit.}
 \end{figure}
 
@@ -68,28 +69,29 @@ NMI is used for parity errors and other major system faults such as power failur
 \end{itemize}
 
 \begin{figure}[h!]
-  \includegraphics[width = 0.8\textwidth]{./figures/INTR_Timing.png}
+  \includegraphics[width = 1\textwidth]{./figures/INTR_Timing.png}
   \caption{The timing of the INTR input and INTA output. *This portion of the data bus is ignored and usually contains the vector number.}
 \end{figure}
-
+\newpage
 \subsection{Making INTR input edge triggered}
 \begin{figure}[h!]
   \includegraphics[width = 0.8\textwidth]{./figures/INTR_Edge.png}
   \caption{Converting INTR into an edge-triggered interrupt request input.}
 \end{figure}
-
+\newpage
 \subsection{Applying a fiex interrupt vector number FFH}
 \begin{figure}[h!]
+  \centering
   \includegraphics[width = 0.8\textwidth]{./figures/INTR_FFH.png}
   \caption{A simple method for generating interrupt vector type number FFH in response to INTR.}
 \end{figure}
-
+\newpage
 \subsection{Using a 3-state buffer to place a vector type number 80H}
 \begin{figure}[h!]
   \includegraphics[width = 0.8\textwidth]{./figures/INTR_80H.png}
   \caption{A circuit that applies any interrupt vector type number in response to INTA . Here the circuit is applying type number 80H.}
 \end{figure}
-
+\newpage
 \subsection{Using 74ALS244 to expand to accomodate up to 7 interrupt inputs}
 \begin{figure}[h!]
   \includegraphics[width = 0.8\textwidth]{./figures/INTR_Expand.png}
@@ -104,7 +106,7 @@ NMI is used for parity errors and other major system faults such as power failur
 \end{figure}
 
 $2^7$ locations must be used which is wasteful. the solution is \textbf{Daisy-Chained Interrupts}
-
+\newpage
 \subsection{Daisy-Chained Interrupts}
 \begin{figure}[h!]
   \includegraphics[width = 0.8\textwidth]{./figures/Daisy_Chain.png}
