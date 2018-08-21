@@ -85,9 +85,6 @@ Box and line diagrams
 \item Architectural design is a creative process so the process differs depending on the type of system being developed.
 
 \item However, a number of common decisions span all design processes and these decisions affect the non-functional characteristics of the system.
-\end{itemize}
-\section{Architectural design decisions}
-\begin{itemize}
 
 \item Is there a generic application architecture that can be used?
 
@@ -168,7 +165,7 @@ Box and line diagrams
 \item Patterns may be represented using tabular and graphical descriptions.
 
 \end{itemize}
-\section{The Model-View-Controller (MVC) pattern}
+\subsection{The Model-View-Controller (MVC) pattern}
 
 \begin{table}[h!]
 \centering
@@ -191,7 +188,7 @@ Disadvantages & Can involve additional code and code complexity when the data mo
 
 \label{table:T2_3}
 \end{table}
-\section{The organization of the Model-View-Controller}
+\subsubsection{The organization of the Model-View-Controller}
 \begin{figure}[h!]
     \centering
     \includegraphics[width = 0.8\textwidth]{./figures/L3_2.png}
@@ -199,7 +196,7 @@ Disadvantages & Can involve additional code and code complexity when the data mo
     \label{fig:L3_2}
 \end{figure}
 \newpage
-\section{Web application architecture using the MVC pattern}
+\subsubsection{Web application architecture using the MVC pattern}
 \begin{figure}[h!]
     \centering
     \includegraphics[width = 0.8\textwidth]{./figures/L3_3.png}
@@ -207,7 +204,7 @@ Disadvantages & Can involve additional code and code complexity when the data mo
     \label{fig:L3_3}
 \end{figure}
 
-\section{Layered architecture}
+\subsection{Layered architecture}
 \begin{itemize}
 \item Used to model the interfacing of sub-systems.
 
@@ -219,7 +216,7 @@ Disadvantages & Can involve additional code and code complexity when the data mo
 
 \end{itemize}
 \newpage
-\section{The Layered architecture pattern}
+\subsubsection{The Layered architecture pattern}
 
 
 \begin{table}[h!]
@@ -245,7 +242,7 @@ Disadvantages & In practice, providing a clean separation between layers is ofte
 \end{table}
 
 \newpage
-\section{A generic layered architecture}
+\subsection{A generic layered architecture}
 \begin{figure}[h!]
     \centering
     \includegraphics[width = 0.8\textwidth]{./figures/L3_4.png}
@@ -253,7 +250,7 @@ Disadvantages & In practice, providing a clean separation between layers is ofte
     \label{fig:L3_4}
 \end{figure}
 
-\section{The architecture of the LIBSYS system}
+\subsection{The architecture of the LIBSYS system}
 \begin{figure}[h!]
     \centering
     \includegraphics[width = 0.8\textwidth]{./figures/L3_5.png}
@@ -274,7 +271,7 @@ Disadvantages & In practice, providing a clean separation between layers is ofte
 
 
 \end{itemize}
-\section{Repository architecture}
+\subsection{Repository architecture}
 \begin{itemize}
 \item Sub-systems must exchange data. This may be done in two ways:
 
@@ -285,7 +282,7 @@ Disadvantages & In practice, providing a clean separation between layers is ofte
 
 
 \end{itemize}
-\section{A repository architecture for an IDE}
+\subsubsection{A repository architecture for an IDE}
 \begin{figure}[h!]
     \centering
     \includegraphics[width = 0.8\textwidth]{./figures/L3_6.png}
@@ -293,7 +290,7 @@ Disadvantages & In practice, providing a clean separation between layers is ofte
     \label{fig:L3_6}
 \end{figure}
 \newpage
-\section{The Repository pattern}
+\subsubsection{The Repository pattern}
 
 
 \begin{table}[h!]
@@ -320,7 +317,7 @@ Disadvantages & The repository is a single point of failure so problems in the r
 
 
 
-\section{Client-server architecture}
+\subsection{Client-server architecture}
 \begin{itemize}
 
 \item Distributed system model which shows how data and processing is distributed across a range of components.
@@ -332,7 +329,7 @@ Disadvantages & The repository is a single point of failure so problems in the r
 \item Set of clients which call on these services. \item Network which allows clients to access servers.
 
 \end{itemize}
-\section{The Client–server pattern}
+\subsubsection{The Client–server pattern}
 
 \begin{table}[h!]
 \centering
@@ -356,7 +353,7 @@ Disadvantages & Each service is a single point of failure so susceptible to deni
 \label{table:T2_3}
 \end{table}
 \newpage
-\section{A client–server architecture for a film library}
+\subsubsection{A client–server architecture for a film library}
 \begin{figure}[h!]
     \centering
     \includegraphics[width = 0.8\textwidth]{./figures/L3_7.png}
@@ -364,7 +361,7 @@ Disadvantages & Each service is a single point of failure so susceptible to deni
     \label{fig:L3_7}
 \end{figure}
 
-\section{Pipe and filter architecture}
+\subsection{Pipe and filter architecture}
 \begin{itemize}
 \item Functional transformations process their inputs to produce outputs.
 
@@ -376,7 +373,7 @@ Disadvantages & Each service is a single point of failure so susceptible to deni
 \end{itemize}
 
 \newpage
-\section{The pipe and filter pattern}
+\subsubsection{The pipe and filter pattern}
 
 \begin{table}[h!]
 \centering
@@ -401,7 +398,7 @@ Disadvantages & The format for data transfer has to be agreed upon between commu
 \end{table}
 
 \newpage
-\section{An example of the pipe and filter architecture}
+\subsubsection{An example of the pipe and filter architecture}
 \begin{figure}[h!]
     \centering
     \includegraphics[width = 0.8\textwidth]{./figures/L3_8.png}
@@ -418,14 +415,14 @@ Disadvantages & The format for data transfer has to be agreed upon between commu
 \item A generic application architecture is an architecture for a type of software system that may be configured and adapted to create a system that meets specific requirements.
 
 \end{itemize}
-\section{Use of application architectures}
+\subsection{Use of application architectures}
 \begin{itemize}
 \item As a starting point for architectural design. \item As a design checklist.
 \item As a way of organising the work of the development team. \item As a means of assessing components for reuse.
 \item As a vocabulary for talking about application types.
 
 \end{itemize}
-\section{Examples of application types}
+\subsection{Examples of application types}
 \begin{itemize}
 \item Data processing applications
 
@@ -442,13 +439,14 @@ Disadvantages & The format for data transfer has to be agreed upon between commu
 \item Language processing systems
 
  \item Applications where the users’ intentions are specified in a formal language that is processed and interpreted by the system.
-\end{itemize}
-\section{Application type examples}
-\begin{itemize}
+
 \item Focus here is on transaction processing and language processing systems.
 
-\item Transaction processing systems  \item E-commerce systems;  \item Reservation systems.
-\item Language processing systems  \item Compilers;
+\item Transaction processing systems
+\item E-commerce systems;
+\item Reservation systems.
+\item Language processing systems
+\item Compilers;
  \item Command interpreters.
 
 
@@ -464,7 +462,7 @@ Disadvantages & The format for data transfer has to be agreed upon between commu
 
 
 \end{itemize}
-\section{The structure of transaction processing applications}
+\subsection{The structure of transaction processing applications}
 \begin{figure}[h!]
     \centering
     \includegraphics[width = 0.8\textwidth]{./figures/L3_9.png}
@@ -475,7 +473,7 @@ Disadvantages & The format for data transfer has to be agreed upon between commu
 
 
 
-\section{The software architecture of an ATM system}
+\subsection{The software architecture of an ATM system}
 \begin{figure}[h!]
     \centering
     \includegraphics[width = 0.8\textwidth]{./figures/L3_10.png}

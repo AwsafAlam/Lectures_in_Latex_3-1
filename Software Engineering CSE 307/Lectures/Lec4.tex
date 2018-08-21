@@ -21,7 +21,7 @@
 \item Dependability covers the related systems attributes of reliability, availability and security. These are all inter-dependent.
 \end{itemize}
 
-\section{Importance of dependability}
+\subsection{Importance of dependability}
 \begin{itemize}
 \item System failures may have widespread effects with large numbers of people affected by the failure.
 \item Systems that are not dependable and are unreliable, unsafe or insecure may be rejected by their users.
@@ -29,7 +29,7 @@
 \item Undependable systems may cause information loss with a high consequent recovery cost.
 \end{itemize}
 
-\section{Causes of failure}
+\subsection{Causes of failure}
 \begin{enumerate}
 \item \textbf{Hardware failure}
 $-$ Hardware fails because of design and manufacturing errors or because components have reached the end of their natural life.
@@ -39,7 +39,7 @@ $-$ Software fails due to errors in its specification, design or implementation.
 $-$ Human operators make mistakes. Now perhaps the largest single cause of system failures in socio-technical systems.
 \end{enumerate}
 
-\section{Principal dependability properties}
+\subsection{Principal dependability properties}
 \begin{figure}[h!]
     \centering
     \includegraphics[width = 0.8\textwidth]{./figures/L4_1.png}
@@ -48,7 +48,7 @@ $-$ Human operators make mistakes. Now perhaps the largest single cause of syste
 \end{figure}
 
 
-\section{Principal properties}
+\subsection{Principal properties}
 \begin{itemize}
 \item \textbf{Availability}
 $-$ The probability that the system will be up and running and able to deliver useful services to users.
@@ -61,9 +61,7 @@ $-$ A judgment of how likely it is that the system will cause damage to people o
 
 \item \textbf{Security}
 $-$ A judgment of how likely it is that the system can resist accidental or deliberate intrusions.
-\end{itemize}
- \section{Other dependability properties}
-\begin{itemize}
+
 \item \textbf{Repairability}
 $-$ Reflects the extent to which the system can be repaired in the event of a failure
 
@@ -92,6 +90,7 @@ $-$ Reflects the extent to which user input errors can be avoided and tolerated.
 \item Repairability $-$ short-term perspective to get the system back into service; Maintainability $-$ long-term perspective.
 \item Very important for critical systems as faults are often introduced into a system because of maintenance problems. If a system is maintainable, there is a lower probability that these faults will be introduced or undetected.
 \end{itemize}
+
 \section{Survivability}
 \begin{itemize}
 \item The ability of a system to continue to deliver its services to users in the face of deliberate or accidental attack
@@ -161,6 +160,7 @@ $-$ Reflects the extent to which user input errors can be avoided and tolerated.
 \item Depends on system type - for business systems in particular, modest levels of dependability may be adequate
 
 \end{itemize}
+
 \section{Availability and reliability}
 \begin{itemize}
 \item Reliability
@@ -173,9 +173,6 @@ $-$ Reflects the extent to which user input errors can be avoided and tolerated.
 
 \item Both of these attributes can be expressed quantitatively e.g. availability of 0.999 means that the system is up and running for 99.9% of the time.
 
-\end{itemize}
-\section{Availability and reliability}
-\begin{itemize}
 \item It is sometimes possible to subsume system availability under system reliability
 
   \item Obviously if a system is unavailable it is not delivering the specified system services.
@@ -321,7 +318,7 @@ System failure & An event that occurs at some point in time when the system does
 
 
 \end{itemize}
-\section{Safety criticality}
+\subsection{Safety criticality}
 \begin{itemize}
 \item Primary safety-critical systems
 
@@ -332,7 +329,7 @@ System failure & An event that occurs at some point in time when the system does
   \item Systems whose failure results in faults in other (socio-technical)systems, which can then have safety consequences. For example, the MHC-PMS is safety-critical as failure may lead to inappropriate treatment being prescribed.
 
 \end{itemize}
-\section{Safety and reliability}
+\subsection{Safety and reliability}
 \begin{itemize}
 \item Safety and reliability are related but distinct
 
@@ -343,7 +340,7 @@ System failure & An event that occurs at some point in time when the system does
 \item Safety is concerned with ensuring system cannot cause damage irrespective of whether
 or not it conforms to its specification
 \end{itemize}
-\section{Unsafe reliable systems}
+\subsection{Unsafe reliable systems}
 \begin{itemize}
 \item There may be dormant faults in a system that are undetected for many years and only rarely arise.
 
@@ -357,7 +354,7 @@ or not it conforms to its specification
   \item Often the result of operator error.
 \end{itemize}
 \newpage
-\section{Safety terminology}
+\subsection{Safety terminology}
 \begin{table}[h!]
 \centering
 \begin{tabular}{ |p{3cm}|p{8cm}|  }
@@ -382,7 +379,7 @@ Risk & This is a measure of the probability that the system will cause an accide
 \label{table:T4_2}
 \end{table}
 
-\section{Safety achievement}
+\subsection{Safety achievement}
 \begin{itemize}
 \item Hazard avoidance
 
@@ -397,7 +394,7 @@ Risk & This is a measure of the probability that the system will cause an accide
   \item The system includes protection features that minimise the damage that may result from an accident.
 
 \end{itemize}
-\section{Normal accidents}
+\subsection{Normal accidents}
 \begin{itemize}
 \item Accidents in complex systems rarely have a single cause as these systems are designed to be resilient to a single point of failure
 
@@ -408,7 +405,7 @@ Risk & This is a measure of the probability that the system will cause an accide
 \item It is probably the case that anticipating all problem combinations, especially, in software controlled systems is impossible so achieving complete safety is impossible. Accidents are inevitable.
 
 \end{itemize}
-\section{Software safety benefits}
+\subsection{Software safety benefits}
 \begin{itemize}
 \item Although software failures can be safety-critical, the use of software control systems contributes to increased system safety
 
@@ -427,7 +424,7 @@ Risk & This is a measure of the probability that the system will cause an accide
 
 
 \end{itemize}
-\section{Fundamental security}
+\subsection{Fundamental security}
 \begin{itemize}
 \item If a system is a networked system and is insecure then statements about its reliability and its safety are unreliable.
 
@@ -437,7 +434,7 @@ Risk & This is a measure of the probability that the system will cause an accide
 
 \end{itemize}
 \newpage
-\section{Security terminology}
+\subsection{Security terminology}
 \begin{table}[h!]
 \centering
 \begin{tabular}{ |p{3cm}|p{8cm}|  }
@@ -462,7 +459,7 @@ Control & A protective measure that reduces a system’s vulnerability. Encrypti
 \label{table:T4_2}
 \end{table}
 
-\section{Threat classes}
+\subsection{Threat classes}
 \begin{itemize}
 \item Threats to the confidentiality of the system and its data
 
@@ -474,7 +471,7 @@ Control & A protective measure that reduces a system’s vulnerability. Encrypti
 \end{itemize}
 
 
-\section{Examples of security terminology (MHC-PMS)}
+\subsection{Examples of security terminology (MHC-PMS)}
 \begin{table}[h!]
 \centering
 \begin{tabular}{ |p{3cm}|p{8cm}|  }
