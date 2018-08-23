@@ -1,18 +1,28 @@
-\contentsline {part}{I\hspace {1em}Lecture 1}{5}
-\contentsline {chapter}{\numberline {1}Modulation}{7}
-\contentsline {section}{\numberline {1.1}Introduction}{7}
-\contentsline {section}{\numberline {1.2}Advantages of Modulation}{7}
-\contentsline {section}{\numberline {1.3}Types of Modulation}{8}
-\contentsline {chapter}{\numberline {2}Amplitude Modulation \& Demodulation}{9}
-\contentsline {section}{\numberline {2.1}Baseband \& Carrier communication}{9}
-\contentsline {section}{\numberline {2.2}Amplitude Modulation (AM)}{10}
-\contentsline {subsection}{\numberline {2.2.1}Introduction}{10}
-\contentsline {subsection}{\numberline {2.2.2}Amplitude Modulation Principle}{10}
-\contentsline {subsection}{\numberline {2.2.3}Envelope Formation}{11}
-\contentsline {chapter}{\numberline {3}Double Side-Band Suppressed Carrier}{13}
-\contentsline {section}{\numberline {3.1}Modulation}{13}
-\contentsline {section}{\numberline {3.2}Demodulation}{16}
-\contentsline {part}{II\hspace {1em}Lecture 2}{19}
-\contentsline {chapter}{\numberline {4}Double Side-Band with Carrier}{21}
-\contentsline {part}{III\hspace {1em}Lecture 3}{23}
-\contentsline {part}{IV\hspace {1em}Lecture 4}{25}
+\contentsline {chapter}{\numberline {1}Lecture 1 (1505114)}{5}
+\contentsline {section}{\numberline {1.1}Modulation}{5}
+\contentsline {subsection}{\numberline {1.1.1}Introduction}{5}
+\contentsline {subsection}{\numberline {1.1.2}Advantages of Modulation}{5}
+\contentsline {subsection}{\numberline {1.1.3}Types of Modulation}{6}
+\contentsline {section}{\numberline {1.2}Amplitude Modulation \& Demodulation}{6}
+\contentsline {subsection}{\numberline {1.2.1}Baseband \& Carrier communication}{6}
+\contentsline {subsection}{\numberline {1.2.2}Amplitude Modulation (AM)}{7}
+\contentsline {subsubsection}{Introduction}{7}
+\contentsline {subsubsection}{Amplitude Modulation Principle}{8}
+\contentsline {subsubsection}{Envelope Formation}{8}
+\contentsline {section}{\numberline {1.3}Double Side-Band Suppressed Carrier}{8}
+\contentsline {subsection}{\numberline {1.3.1}Modulation}{10}
+\contentsline {subsection}{\numberline {1.3.2}Demodulation}{12}
+\contentsline {section}{\numberline {1.4}Non Linear Modulation}{14}
+\contentsline {chapter}{\numberline {2}Lecture 2(1505111)}{15}
+\contentsline {section}{\numberline {2.1}Double Side-Band with Carrier}{15}
+\contentsline {section}{\numberline {2.2}Quadrature Amplitude Modulation}{19}
+\contentsline {chapter}{\numberline {3}Lecture 3 (1505113)}{21}
+\contentsline {section}{\numberline {3.1}Amplitude Modulation:Single Sideband(SSB)}{21}
+\contentsline {subsection}{\numberline {3.1.1}Time Domain Representation of SSB Signals}{22}
+\contentsline {subsection}{\numberline {3.1.2}Demodulation of SSB-SC Signals}{24}
+\contentsline {subsection}{\numberline {3.1.3}Envelope Detection of SSB Signals with a Carrier(SSB+C)}{25}
+\contentsline {chapter}{\numberline {4}Lecture 4 (1505112)}{27}
+\contentsline {section}{\numberline {4.1}Amplitude modulation : Vestigial Sideband (VSB)}{27}
+\contentsline {subsection}{\numberline {4.1.1}Modulation:}{27}
+\contentsline {subsection}{\numberline {4.1.2}Demodulation:}{27}
+\contentsline {section}{\numberline {4.2}PHASE-LOCKED LOOP (PLL)}{29}

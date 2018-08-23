@@ -1,13 +1,13 @@
-\chapter{Modulation}
+\section{Modulation}
 
-\section{Introduction}
+\subsection{Introduction}
 Modulation is done when message signal is not capable of propagating long distance, we change the signal by multiplying another high frequency signal and send the modulated signal.
 
 \par If the characteristics of the message signal is changed, the message contained in it also alters. Hence, is must be ensured that the message signal is not altered in anyway. A high frequency signal can travel up to a longer distance, without getting affected by external disturbances. We take the help of such high frequency signal which is called as a carrier signal to transmit our message signal. Such a process is simply called as Modulation.
 
 Modulation is the process of changing the parameters of the carrier signal, in accordance with the instantaneous values of the modulating signal.
 
-\section{Advantages of Modulation}
+\subsection{Advantages of Modulation}
 The antenna used for transmission, had to be very large, if modulation was not introduced. The range of communication gets limited as the wave cannot travel a distance without getting distorted.
 
 Following are some of the advantages for implementing modulation in the communication systems.
@@ -22,11 +22,11 @@ Following are some of the advantages for implementing modulation in the communic
 
 \end{itemize}
 
-\section{Types of Modulation}
+\subsection{Types of Modulation}
 There are many types of modulations. Depending upon the modulation techniques used, they are classified as shown in the following figure.
 \subfile{Lectures/types.tex}
 
-\chapter{Amplitude Modulation \& Demodulation}
+\section{Amplitude Modulation \& Demodulation}
 In this chapter we will focus on classic analog modulations
 \begin{enumerate}
   \item Amplitude Modulation
@@ -34,7 +34,7 @@ In this chapter we will focus on classic analog modulations
 \end{enumerate}
 Before we begin our discussion of different analog modulations, it is important to distinguish between communication systems that do not use modulation (\textbf{baseband communications}) and systems that use modulation (\textbf{carrier communications}).
 
-\section{Baseband \& Carrier communication}
+\subsection{Baseband \& Carrier communication}
 The term \textbf{baseband} is used to designate the frequency band of the original message signal from the source.
 \begin{enumerate}
   \item \textbf{Baseband communication}
@@ -54,15 +54,15 @@ The term \textbf{baseband} is used to designate the frequency band of the origin
 \end{enumerate}
 
 
-\section{Amplitude Modulation (AM)}
+\subsection{Amplitude Modulation (AM)}
 In analog modulation, the amplitude of the carrier signal is made to follow that of the modulating signal. Several variants of amplitude modulation are used in practice. They are Double Side Band Suppressed Carrier (DSBSC) Modulation, Single Sideband Suppressed Carrier (SSBSC) Modulation and Vestigial Sideband Amplitude Modulation (VSBAM).
 
-\subsection{Introduction}
+\subsubsection{Introduction}
 Let $m(t)$ denote a signal that contains information to be transmitted. The information can take analog form or digital form. In traditional analog radio broadcast, $m(t)$ would be an audio signal. In digital communication systems, $m(t)$ may be a sequence of pulses that carries binary data. The information-bearing signal $m(t)$ will be called a \textbf{message signal} for convenience. Also, we will assume that $m(t)$ is a \textbf{baseband signal} with bandwidth W Hz.
 
 Let $ c(t) = A_c cos(2\pi f_c t + \phi)$ denote a \textit{sinusoidal carrier wave}, where $A_c$ is the carrier amplitude and $f_c$ is the carrier frequency. We wish to use the carrier wave to carry the message signal, so that the message signal can appropriately be transmitted over a bandpass channel.There are various carrier modulation techniques. Among them, amplitude modulation (AM) is considered the oldest.
 
-\subsection{Amplitude Modulation Principle}
+\subsubsection{Amplitude Modulation Principle}
 Let the \textit{Fourier Transform} of $m(t)$ is denoted by $M(f)$. To move the frequency response of $m(t)$ to a new frequency band centered at $f_c$Hz, we use the \textit{frequency shifting property}. In other words, all we need to do is to multiply $m(t)$ by a sinusoid of frequency $f_c$ such that
 \begin{equation*}
     s_1 (t) = m(t)cos ~ 2\pi f_c t
@@ -73,7 +73,7 @@ This immediately acheives the basic aim of modulation by moving the signal frequ
 \end{equation*}
 This allow changes in the amplitude of the sinusoid $s_1(t)$ to be proportional to the message signal (Amplitude Modulation)
 
-\subsection{Envelope Formation}
+\subsubsection{Envelope Formation}
 The amplitude-modulated wave may be described by the following formula
 \begin{equation}
   s(t) = [1 + k_a m(t)] c(t)\\
@@ -108,7 +108,7 @@ While the AM scheme is rarely seen in modern communication, we still see some AM
 munication systems.
 
 
-\chapter{Double Side-Band Suppressed Carrier}
+\section{Double Side-Band Suppressed Carrier}
 Recall that m(t) denotes the message signal, and $c(t) = A_c cos(2 \pi f_ct)$ denotes the sinusoidal carrier
 wave. Also recall that m(t) is assumed to be a baseband signal with bandwidth W Hz. In double
 sideband-suppressed carrier (DSB-SC) modulation, the modulated wave is given by
@@ -146,7 +146,7 @@ If the carrier amplitude $A_c$ is made directly proportional to the modulating s
   \caption{DSB-SC Modulation block Diagram}
   \label{fig:modulation}
 \end{figure}
-\section{Modulation}
+\subsection{Modulation}
 This type of modulation simply shiftsthe spectrum of $m(t)$ to the carrier frequency.Thus, if
 
 \begin{align}
@@ -233,7 +233,7 @@ The relationshop of $B$ to $f_c$ is of interest. Figure \ref{fig:DSBSC2} shows t
 have the pure carrier component. Consequently, one hundred percent of the transmission power is
 spent on sending the message signal.
 
-\section{Demodulation}
+\subsection{Demodulation}
 DSB-SC modulation shifts spectrum to right and left by $f_c$.To recover the original signal m(t) from the modulated signal, it is necessary to retranslate the spectrum to its original position. This process is known as \textbf{demodulation}.
 If modulated signal spectrum in Figure \ref{fig:DSBSC2} is
 shifted to the left and to the right by $f_c$ and multiplied by
@@ -300,3 +300,30 @@ modulated signal with carrier frequency $2f_c$, is centered at $\pm 2f_c$
 This component is suppressed by low-pass filter. On the other hand, the desired component $\frac{1}{2}M(f)$, being a low-pass spectrum (centered at f = 0) passes through the filter unharmed, resulting in $\frac{1}{2}m(t)$. We can get rid  of the inconvenient fraction $\frac{1}{2}$ in the output by using a carrier $cos~2w_ct$ instead of $cos~w_ct$
 This method of recovering the baseband signal is called synchronous detection or coherent detection where we
 use a carrier of exactly the same frequency(same phase) as the carrier used for modulation.
+
+\section{Non Linear Modulation}
+Modulation can be acheived by using non linear devices, such as a semi-conductor diode or a transistor. Figure \ref{fig:Nonlinear} shows one possible scheme, which uses two identical nonlinear elements (boxes marked NL).
+\begin{figure}[h!]
+  \includegraphics[width = 1\textwidth]{figures/NonLinear.png}
+  \caption{Nonlinear DSB-SC modulator}
+  \label{fig:Nonlinear}
+\end{figure}
+
+
+Let the input-output characteristics of either of the nonlinear elements be approximated by a power series.
+\begin{equation*}
+  \begin{split}
+    x_1(t) = cos~w_ct + m(t)\\
+    x_2(t) = cos~w_ct - m(t)\\
+    y(t) = a x(t) + bx^2(t)
+  \end{split}
+\end{equation*}
+where x(t) and y(t) are the input and the output, respectively, of the nonlinear element. The summer output z(t) in the Figure \ref{fig:Nonlinear} is given by
+\begin{equation*}
+  z(t) = y_1(t) - y_2(t) = [ax_1(t) + bx_1^2(t)] - [ax_2(t) + bx_2^2(t)]
+\end{equation*}
+Substituting the two inputs $x_1(t) = cos~w_ct + m(t)$ and $x_2(t) = cos~w_ct - m(t)$ in this equation gives
+\begin{equation*}
+    z(t) = 2a.m(t) + 4b.m(t)cos~w_ct
+\end{equation*}
+When z(t) is passed through the bandpass filter turned to $w_c$, the signal $am(t)$ is suppressed and the desired modulated signal $4bm(t)cos~w_ct$ can pass through the system without distortion.
